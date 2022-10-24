@@ -10,9 +10,28 @@ namespace IterationStatements
         static void Main(string[] args)
         {
             Range(1000, -1000);
+
             ByThree();
 
-            FallsBetween(); 
+            Console.WriteLine(EqualTo(5, 5));
+            Console.WriteLine(EqualTo(5, 3));
+
+            Console.WriteLine(IsItEven(4));
+            Console.WriteLine(IsItEven(5));
+
+            Console.WriteLine(PositiveOrNeg(3));
+            Console.WriteLine(PositiveOrNeg(-2));
+            Console.WriteLine(PositiveOrNeg(0));
+
+            CanYouVote(22);
+            CanYouVote(15);
+
+            Console.WriteLine(FallsBetween());
+
+            MultiTable(2);
+
+
+
 
         }
 
@@ -53,7 +72,7 @@ namespace IterationStatements
         }
         //    Write a method to check whether a given number is even or odd
 
-        public static bool ItsEven(int d)
+        public static bool IsItEven(int d)
         {
             if (d % 2 == 0)
             {
@@ -129,7 +148,7 @@ namespace IterationStatements
         {
             for (int i = 1; i <= 12; i++)
             {
-                Console.WriteLine($"{i} x {p} = {i * p}");
+                Console.WriteLine($"{p} x {i} = {p * i}");
             }
 
 
